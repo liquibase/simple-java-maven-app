@@ -35,4 +35,23 @@ public class App {
     public String getMultipleMessages(String message1, String message2) {
         return message1 + " " + message2;
     }
+
+    // create a method to get multiple messages
+    // copilot
+    public String getMultipleMessages2(String message1, String message2) {
+        return message1 + " " + message2;
+    }
+
+    // create a method to get multiple messages
+    // ai
+    public String getMultipleMessages3(String message1, String message2) {
+        return message1 + " " + message2;
+    }
+
+    // create a method to get multiple messages
+    // AI
+    public String getMultipleMessages4(String message1, String message2) {
+        return message1 + " " + message2;
+    }
+    
 }
