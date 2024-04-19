@@ -8,14 +8,6 @@ on:
       - synchronize
 
 jobs:
-  # a job to print /home/runner/work/simple-java-maven-app/simple-java-maven-app/.git/hooks/sendemail-validate.sample
-  print-sample:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-      - name: Print sample
-        run: cat /home/runner/work/simple-java-maven-app/simple-java-maven-app/.git/hooks/sendemail-validate.sample
   fossa:
     uses: liquibase/build-logic/.github/workflows/fossa.yml@v0.7.1
     secrets: inherit
@@ -26,3 +18,4 @@ jobs:
 
 
 
+      
