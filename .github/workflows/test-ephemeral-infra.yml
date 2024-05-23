@@ -9,6 +9,7 @@ jobs:
     secrets: inherit
     with:
         deploy: true
+        dynamodb: true
 
   destroy-ephemeral-cloud-infra:
     if: always()
@@ -18,3 +19,5 @@ jobs:
     with:
         destroy: true
         stack_id: ${{ needs.deploy-ephemeral-cloud-infra.outputs.stack_id }}
+        dynamodb: true
+
