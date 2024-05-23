@@ -1,0 +1,11 @@
+name: Ephemeral Cloud Infrastructure
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-test:
+    uses: liquibase/build-logic/.github/workflows/ephemeral-cloud-infra.yml@DAT-16824
+    secrets: inherit
+    with:
+        action: deploy
