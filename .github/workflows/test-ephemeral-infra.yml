@@ -17,4 +17,4 @@ jobs:
     secrets: inherit
     with:
         destroy: true
-        stack_id: ${{ needs.deploy-ephemeral-cloud-infra.outputs.EPHEMERAL_STACK_ID }}
+        stack_id: ${{ needs.deploy-ephemeral-cloud-infra.outputs.stack_id }}
